@@ -357,7 +357,7 @@ export default function ServicesSection() {
                 <X size={24} className="text-gray-600" />
               </button>
 
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-16 px-8 rounded-t-2xl">
+              <div className="bg-gradient-to-br from-brand-600 to-brand-700 text-white py-16 px-8 rounded-t-2xl">
                 <div className="text-center">
                   {(() => {
                     const Service = services[selectedService];
@@ -366,7 +366,7 @@ export default function ServicesSection() {
                       <>
                         <Icon size={64} className="mx-auto mb-6" />
                         <h2 className="text-4xl font-bold mb-4">{Service.title}</h2>
-                        <p className="text-xl text-blue-100">{Service.description}</p>
+                        <p className="text-xl text-brand-100">{Service.description}</p>
                       </>
                     );
                   })()}
@@ -391,7 +391,7 @@ export default function ServicesSection() {
                   <ul className="space-y-3">
                     {services[selectedService].detailedFeatures.map((feature, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">
+                        <span className="bg-brand-600 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">
                           {index + 1}
                         </span>
                         <p className="text-gray-700 pt-1">{feature}</p>
@@ -406,11 +406,11 @@ export default function ServicesSection() {
                     {services[selectedService].process.map((step, index) => (
                       <div key={index} className="flex gap-4">
                         <div className="flex flex-col items-center">
-                          <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                          <div className="bg-brand-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
                             {index + 1}
                           </div>
                           {index < services[selectedService].process.length - 1 && (
-                            <div className="w-0.5 h-full bg-blue-200 mt-2"></div>
+                            <div className="w-0.5 h-full bg-brand-200 mt-2"></div>
                           )}
                         </div>
                         <div className="flex-1 pb-4">
@@ -425,7 +425,7 @@ export default function ServicesSection() {
                   <a
                     href="#book"
                     onClick={() => setSelectedService(null)}
-                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors text-center"
+                    className="flex-1 bg-brand-600 hover:bg-brand-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors text-center"
                   >
                     Book This Service
                   </a>
