@@ -2,12 +2,12 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-brand-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-xl">
+              <div className="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center font-bold text-xl">
                 12N
               </div>
               <div>
@@ -16,7 +16,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Professional IT support and technology services for homes and businesses across Fiji.
+              Professional IT support and technology services for homes and businesses across Nadi.
             </p>
           </div>
 
@@ -52,11 +52,11 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={16} className="mt-1 flex-shrink-0" />
-                <a href="mailto:info@12netsolution.com" className="text-gray-400 hover:text-white transition-colors">info@12netsolution.com</a>
+                <a href="mailto:waqa@12netsolution.com" className="text-gray-400 hover:text-white transition-colors">waqa@12netsolution.com</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span className="text-gray-400">Serving all of Fiji</span>
+                <span className="text-gray-400">Serving all of Nadi</span>
               </li>
             </ul>
             <div className="flex gap-4 mt-4">
