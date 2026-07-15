@@ -25,7 +25,7 @@ export default function PricingCard({
     <div
       className={`relative rounded-2xl ${
         highlighted
-          ? 'bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-2xl scale-105'
+          ? 'bg-gradient-to-br from-brand-600 to-brand-700 text-white shadow-2xl scale-105'
           : 'bg-white border-2 border-gray-200'
       } p-8 transition-all duration-300 hover:shadow-xl`}
     >
@@ -36,13 +36,13 @@ export default function PricingCard({
       )}
 
       <h3 className="text-2xl font-bold mb-2">{name}</h3>
-      <p className={`text-sm mb-6 ${highlighted ? 'text-blue-100' : 'text-gray-600'}`}>
+      <p className={`text-sm mb-6 ${highlighted ? 'text-brand-100' : 'text-gray-600'}`}>
         {description}
       </p>
 
       <div className="mb-6">
         <span className="text-4xl font-bold">{price}</span>
-        {period && <span className={`text-lg ${highlighted ? 'text-blue-100' : 'text-gray-600'}`}>/{period}</span>}
+        {period && <span className={`text-lg ${highlighted ? 'text-brand-100' : 'text-gray-600'}`}>/{period}</span>}
       </div>
 
       <ul className="space-y-3 mb-8">
@@ -61,8 +61,8 @@ export default function PricingCard({
         onClick={onSelect}
         className={`w-full py-3 px-6 rounded-lg font-semibold transition-all transform hover:scale-105 ${
           highlighted
-            ? 'bg-white text-blue-600 hover:bg-gray-100'
-            : 'bg-blue-600 text-white hover:bg-blue-700'
+            ? 'bg-white text-brand-600 hover:bg-gray-100'
+            : 'bg-brand-600 text-white hover:bg-brand-700'
         }`}
       >
         {buttonText}
