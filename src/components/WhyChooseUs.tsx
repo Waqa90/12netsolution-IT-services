@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
     {
       icon: Users,
       title: 'Local Team',
-      description: 'Based in Fiji, we understand local needs and provide ongoing support.',
+      description: 'Based in Nadi, we understand local needs and provide ongoing support.',
     },
     {
       icon: Zap,
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Your trusted partner for all IT needs in Fiji
+            Your trusted partner for all IT needs in Nadi
           </p>
         </div>
 
@@ -50,8 +50,8 @@ export default function WhyChooseUs() {
               key={index}
               className="flex flex-col items-center text-center p-6 rounded-xl hover:bg-gray-50 transition-colors"
             >
-              <div className="bg-blue-100 p-4 rounded-full mb-4">
-                <reason.icon className="text-blue-600" size={32} />
+              <div className="bg-brand-100 p-4 rounded-full mb-4">
+                <reason.icon className="text-brand-600" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">{reason.title}</h3>
               <p className="text-gray-600">{reason.description}</p>
