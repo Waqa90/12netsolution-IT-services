@@ -87,7 +87,7 @@ export default function PricingSection() {
           <p className="text-gray-600 mb-4">Need a custom solution?</p>
           <a
             href="#quote"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="inline-block bg-brand-600 hover:bg-brand-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Request Custom Quote
           </a>
