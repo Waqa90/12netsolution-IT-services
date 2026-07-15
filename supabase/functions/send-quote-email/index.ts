@@ -109,7 +109,7 @@ Deno.serve(async (req: Request) => {
           },
           body: JSON.stringify({
             from: "NetSolution IT Services <quotes@netsolution.com>",
-            to: ["info@netsolution.com"],
+            to: ["waqa@12netsolution.com"],
             subject: `New Quote Request: ${quoteData.service_type}`,
             html: emailHtml,
           }),
