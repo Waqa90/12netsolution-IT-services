@@ -21,23 +21,23 @@ export default function ServiceDetail({
 }: ServiceDetailProps) {
   return (
     <div className="bg-white">
-      <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-20">
+      <div className="bg-gradient-to-br from-brand-600 to-brand-700 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Icon size={64} className="mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
-            <p className="text-xl text-blue-100 mb-8">{description}</p>
+            <p className="text-xl text-brand-100 mb-8">{description}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#book"
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-white text-brand-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
               >
                 Book This Service
                 <ArrowRight size={20} />
               </a>
               <a
                 href="#quote"
-                className="bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-brand-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-900 transition-colors inline-flex items-center justify-center gap-2"
               >
                 Get a Quote
               </a>
@@ -65,7 +65,7 @@ export default function ServiceDetail({
             <ul className="space-y-4">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold">
+                  <span className="bg-brand-600 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold">
                     {index + 1}
                   </span>
                   <p className="text-gray-700 pt-1">{feature}</p>
@@ -80,11 +80,11 @@ export default function ServiceDetail({
               {process.map((step, index) => (
                 <div key={index} className="flex gap-4 mb-8 last:mb-0">
                   <div className="flex flex-col items-center">
-                    <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                    <div className="bg-brand-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
                       {index + 1}
                     </div>
                     {index < process.length - 1 && (
-                      <div className="w-0.5 h-full bg-blue-200 my-2"></div>
+                      <div className="w-0.5 h-full bg-brand-200 my-2"></div>
                     )}
                   </div>
                   <div className="flex-1 pb-8">
@@ -96,15 +96,15 @@ export default function ServiceDetail({
           </section>
 
           {pricing && (
-            <section className="bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl p-8 text-center">
+            <section className="bg-gradient-to-br from-brand-50 to-gray-50 rounded-2xl p-8 text-center">
               <h2 className="text-2xl font-bold mb-4 text-gray-900">Starting From</h2>
-              <p className="text-4xl font-bold text-blue-600 mb-4">{pricing}</p>
+              <p className="text-4xl font-bold text-brand-600 mb-4">{pricing}</p>
               <p className="text-gray-600 mb-6">
                 Final price depends on your specific requirements. Request a detailed quote for accurate pricing.
               </p>
               <a
                 href="#quote"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                className="inline-block bg-brand-600 hover:bg-brand-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Get Detailed Quote
               </a>
