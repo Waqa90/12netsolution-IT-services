@@ -100,7 +100,7 @@ export default function QuoteForm() {
                   required
                   value={formData.customer_name}
                   onChange={(e) => setFormData({ ...formData, customer_name: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white"
                   placeholder="John Doe"
                 />
               </div>
@@ -114,7 +114,7 @@ export default function QuoteForm() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white"
                   placeholder="john@example.com"
                 />
               </div>
@@ -128,7 +128,7 @@ export default function QuoteForm() {
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white"
                   placeholder="+679 846 3328"
                 />
               </div>
@@ -141,7 +141,7 @@ export default function QuoteForm() {
                   required
                   value={formData.service_type}
                   onChange={(e) => setFormData({ ...formData, service_type: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white"
                 >
                   <option value="">Select a service</option>
                   {services.map((service) => (
@@ -160,7 +160,7 @@ export default function QuoteForm() {
                   required
                   value={formData.business_type}
                   onChange={(e) => setFormData({ ...formData, business_type: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white"
                 >
                   <option value="home">Home</option>
                   <option value="small_business">Small Business</option>
@@ -175,7 +175,7 @@ export default function QuoteForm() {
                 <select
                   value={formData.budget_range}
                   onChange={(e) => setFormData({ ...formData, budget_range: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white"
                 >
                   <option value="">Select budget range</option>
                   {budgetRanges.map((range) => (
@@ -197,7 +197,7 @@ export default function QuoteForm() {
                 minLength={10}
                 value={formData.description}
                 onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white"
                 rows={6}
                 placeholder="Please describe your project requirements in detail. Include information about the scope, timeline, and any specific needs..."
               />
@@ -221,7 +221,7 @@ export default function QuoteForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Submitting...' : 'Request Quote'}
             </button>
