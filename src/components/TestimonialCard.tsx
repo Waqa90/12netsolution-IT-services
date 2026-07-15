@@ -26,7 +26,7 @@ export default function TestimonialCard({ name, role, rating, comment, service }
       <div className="border-t pt-4">
         <p className="font-semibold text-gray-900">{name}</p>
         <p className="text-sm text-gray-600">{role}</p>
-        <p className="text-xs text-blue-600 mt-1">{service}</p>
+        <p className="text-xs text-brand-600 mt-1">{service}</p>
       </div>
     </div>
   );
