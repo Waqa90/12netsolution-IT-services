@@ -14,8 +14,8 @@ export default function PaymentSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Banknote className="text-blue-600" size={40} />
+              <div className="bg-brand-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Banknote className="text-brand-600" size={40} />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center">Bank Transfer</h3>
               <p className="text-gray-600 mb-6 text-center">
@@ -72,7 +72,7 @@ export default function PaymentSection() {
             </div>
           </div>
 
-          <div className="mt-12 bg-blue-50 rounded-xl p-8 text-center">
+          <div className="mt-12 bg-brand-50 rounded-xl p-8 text-center">
             <h4 className="font-semibold text-gray-900 mb-2">Payment Terms</h4>
             <p className="text-gray-700">
               50% deposit required for large projects. Balance payable upon service completion.
