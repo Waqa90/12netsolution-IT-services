@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -56,17 +56,11 @@ export default function Footer() {
               </li>
             </ul>
             <div className="flex gap-4 mt-4">
-              <a href="#" className="text-gray-600 hover:text-brand-600 transition-colors">
+              <a href="https://www.facebook.com/people/12Net-Solution/61591812817797/ target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-brand-600 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-brand-600 transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-brand-600 transition-colors">
-                <Linkedin size={20} />
-              </a>
-            </div>
           </div>
+        </div>
         </div>
 
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-sm text-gray-500">
