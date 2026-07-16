@@ -1,4 +1,4 @@
-undefinedimport { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 
 export default function Header() {
