@@ -78,14 +78,14 @@ export default function DashboardPage() {
 
         {loading ? (
           <div className="text-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-600 mx-auto"></div>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {statCards.map((stat) => {
               const Icon = stat.icon;
               const colorClasses = {
-                blue: 'bg-blue-50 text-blue-600',
+                blue: 'bg-brand-50 text-brand-600',
                 green: 'bg-green-50 text-green-600',
                 orange: 'bg-orange-50 text-orange-600',
               }[stat.color];
@@ -122,7 +122,7 @@ export default function DashboardPage() {
                 <h3 className="text-lg font-semibold text-slate-800">View Bookings</h3>
                 <p className="text-slate-600 mt-1">Manage service booking requests</p>
               </div>
-              <Calendar className="w-8 h-8 text-blue-600" />
+              <Calendar className="w-8 h-8 text-brand-600" />
             </div>
           </a>
 
