@@ -13,12 +13,12 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-slate-900 text-white shadow-lg sticky top-0 z-50">
+    <header className="bg-brand-900 text-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-xl">
-              12N
+            <div className="h-12 w-auto flex items-center justify-center">
+              <img src="/logo.png" alt="12Net Solution - IT Services in Nadi" className="h-12 w-auto" />
             </div>
             <div>
               <h1 className="text-xl font-bold">12Net Solution</h1>
@@ -38,7 +38,7 @@ export default function Header() {
             ))}
             <a
               href="#book"
-              className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-semibold transition-colors"
+              className="bg-brand-600 hover:bg-brand-700 px-6 py-2 rounded-lg font-semibold transition-colors"
             >
               Book Now
             </a>
@@ -66,7 +66,7 @@ export default function Header() {
             ))}
             <a
               href="#book"
-              className="block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-semibold text-center transition-colors"
+              className="block bg-brand-600 hover:bg-brand-700 px-6 py-2 rounded-lg font-semibold text-center transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Book Now
@@ -75,18 +75,18 @@ export default function Header() {
         )}
       </div>
 
-      <div className="bg-slate-800 py-2">
+      <div className="bg-brand-800 py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-4 text-sm">
           <div className="flex items-center gap-2">
             <Phone size={16} />
-            <a href="tel:+6798463328" className="hover:text-blue-400 transition-colors">+679 846 3328</a>
+            <a href="tel:+6798463328" className="hover:text-brand-400 transition-colors">+679 846 3328</a>
           </div>
           <div className="flex items-center gap-2">
             <Mail size={16} />
-            <span>info@12netsolution.com</span>
+            <span>waqa@12netsolution.com</span>
           </div>
           <div className="text-gray-400">
-            Serving all of Fiji
+            Serving all of Nadi
           </div>
         </div>
       </div>
