@@ -10,7 +10,6 @@ import TestimonialsSection from './components/TestimonialsSection';
 import BookingForm from './components/BookingForm';
 import QuoteForm from './components/QuoteForm';
 import ContactSection from './components/ContactSection';
-import PaymentSection from './components/PaymentSection';
 import ContactButtons from './components/ContactButtons';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
@@ -30,7 +29,6 @@ function HomePage() {
         <TestimonialsSection />
         <BookingForm />
         <QuoteForm />
-        <PaymentSection />
         <ContactSection />
       </main>
       <Footer />
