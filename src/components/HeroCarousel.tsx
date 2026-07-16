@@ -5,12 +5,12 @@ const slides = [
   {
     id: 1,
     type: 'intro',
-    title: 'Reliable IT Support in Fiji',
+    title: 'Reliable IT Support in Nadi',
     description: 'Professional technology solutions for homes and businesses. Expert installation, support, and maintenance.',
     features: [
       { title: 'Fast Response', description: 'Same-day service available for urgent requests' },
       { title: 'Expert Team', description: 'Certified professionals with years of experience' },
-      { title: 'Nationwide Coverage', description: 'Serving all areas across Fiji' }
+      { title: 'Nationwide Coverage', description: 'Serving all areas across Nadi' }
     ]
   },
   {
@@ -87,7 +87,7 @@ export default function HeroCarousel() {
   const slide = slides[currentSlide];
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white overflow-hidden">
+    <section id="home" className="relative bg-gradient-to-br from-brand-900 via-brand-800 to-brand-900 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
 
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
@@ -103,14 +103,14 @@ export default function HeroCarousel() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
                 href="#book"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all transform hover:scale-105"
+                className="bg-brand-600 hover:bg-brand-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all transform hover:scale-105"
               >
                 Book a Service
                 <ArrowRight size={20} />
               </a>
               <a
                 href="#quote"
-                className="bg-white hover:bg-gray-100 text-slate-900 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all transform hover:scale-105"
+                className="bg-white hover:bg-gray-100 text-brand-900 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all transform hover:scale-105"
               >
                 Request a Quote
               </a>
@@ -130,7 +130,7 @@ export default function HeroCarousel() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <div className="text-sm font-semibold text-blue-400 mb-3 uppercase tracking-wide">
+                <div className="text-sm font-semibold text-brand-400 mb-3 uppercase tracking-wide">
                   {slide.theme}
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -141,7 +141,7 @@ export default function HeroCarousel() {
                 </p>
                 <a
                   href={slide.ctaLink}
-                  className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
+                  className="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
                 >
                   {slide.cta}
                   <ArrowRight size={20} />
@@ -154,7 +154,7 @@ export default function HeroCarousel() {
                     alt={slide.title}
                     className="w-full h-[400px] object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-900/50 to-transparent"></div>
                 </div>
               </div>
             </div>
