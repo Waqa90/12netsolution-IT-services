@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
             </ul>
             <div className="flex gap-4 mt-4">
-              <a href="https://www.facebook.com/people/12Net-Solution/61591812817797/ target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-brand-600 transition-colors">
+              <a href="https://www.facebook.com/people/12Net-Solution/61591812817797/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-brand-600 transition-colors">
                 <Facebook size={20} />
               </a>
           </div>
