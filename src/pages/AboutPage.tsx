@@ -2,8 +2,14 @@ import { ArrowRight, BadgeCheck, HeartHandshake, Eye, ShieldCheck, Users, Scale,
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactButtons from '../components/ContactButtons';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 export default function AboutPage() {
+  usePageMeta(
+    'About Us - 12Net Solution | IT Services in Nadi, Fiji',
+    'Learn about 12Net Solution, a local Nadi-based IT services team offering Starlink, WiFi, CCTV, computer repair, and business IT support built on truthfulness, trust, and transparency.'
+  );
+
   const values = [
     {
       icon: BadgeCheck,

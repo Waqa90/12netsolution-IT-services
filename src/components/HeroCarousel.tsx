@@ -133,9 +133,9 @@ export default function HeroCarousel() {
                 <div className="text-sm font-semibold text-accent-400 mb-3 uppercase tracking-wide">
                   {slide.theme}
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                   {slide.title}
-                </h2>
+                </h1>
                 <p className="text-xl text-gray-300 mb-8">
                   {slide.description}
                 </p>

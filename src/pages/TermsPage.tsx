@@ -1,8 +1,14 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactButtons from '../components/ContactButtons';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 export default function TermsPage() {
+  usePageMeta(
+    'Terms of Service - 12Net Solution',
+    'Terms of service for 12Net Solution IT support plans, bookings, and repairs in Nadi, Fiji, including billing, cancellations, warranty, and fair-use policies.'
+  );
+
   return (
     <div className="min-h-screen bg-white">
       <Header />

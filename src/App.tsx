@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -11,13 +11,22 @@ import BookingForm from './components/BookingForm';
 import QuoteForm from './components/QuoteForm';
 import ContactSection from './components/ContactSection';
 import ContactButtons from './components/ContactButtons';
-import AboutPage from './pages/AboutPage';
-import TermsPage from './pages/TermsPage';
-import LoginPage from './pages/LoginPage';
-import SignupPage from './pages/SignupPage';
-import DashboardPage from './pages/admin/DashboardPage';
-import BookingsPage from './pages/admin/BookingsPage';
-import QuotesPage from './pages/admin/QuotesPage';
+
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const TermsPage = lazy(() => import('./pages/TermsPage'));
+const LoginPage = lazy(() => import('./pages/LoginPage'));
+const SignupPage = lazy(() => import('./pages/SignupPage'));
+const DashboardPage = lazy(() => import('./pages/admin/DashboardPage'));
+const BookingsPage = lazy(() => import('./pages/admin/BookingsPage'));
+const QuotesPage = lazy(() => import('./pages/admin/QuotesPage'));
+
+function PageLoading() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-600"></div>
+    </div>
+  );
+}
 
 function HomePage() {
   useEffect(() => {
@@ -102,42 +111,64 @@ function Router() {
   }, []);
 
   if (currentPath === '/about') {
-    return <AboutPage />;
+    return (
+      <Suspense fallback={<PageLoading />}>
+        <AboutPage />
+      </Suspense>
+    );
   }
 
   if (currentPath === '/terms') {
-    return <TermsPage />;
+    return (
+      <Suspense fallback={<PageLoading />}>
+        <TermsPage />
+      </Suspense>
+    );
   }
 
   if (currentPath === '/admin/login') {
-    return <LoginPage />;
+    return (
+      <Suspense fallback={<PageLoading />}>
+        <LoginPage />
+      </Suspense>
+    );
   }
 
   if (currentPath === '/admin/signup') {
-    return <SignupPage />;
+    return (
+      <Suspense fallback={<PageLoading />}>
+        <SignupPage />
+      </Suspense>
+    );
   }
 
   if (currentPath === '/admin') {
     return (
-      <ProtectedRoute>
-        <DashboardPage />
-      </ProtectedRoute>
+      <Suspense fallback={<PageLoading />}>
+        <ProtectedRoute>
+          <DashboardPage />
+        </ProtectedRoute>
+      </Suspense>
     );
   }
 
   if (currentPath === '/admin/bookings') {
     return (
-      <ProtectedRoute>
-        <BookingsPage />
-      </ProtectedRoute>
+      <Suspense fallback={<PageLoading />}>
+        <ProtectedRoute>
+          <BookingsPage />
+        </ProtectedRoute>
+      </Suspense>
     );
   }
 
   if (currentPath === '/admin/quotes') {
     return (
-      <ProtectedRoute>
-        <QuotesPage />
-      </ProtectedRoute>
+      <Suspense fallback={<PageLoading />}>
+        <ProtectedRoute>
+          <QuotesPage />
+        </ProtectedRoute>
+      </Suspense>
     );
   }
 
