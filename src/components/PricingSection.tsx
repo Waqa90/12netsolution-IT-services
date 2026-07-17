@@ -121,6 +121,13 @@ export default function PricingSection() {
               are billed at your plan's discounted subscriber/call-out rate, not the standard walk-in rate.
             </li>
           </ul>
+          <p className="text-sm text-gray-500 mt-4">
+            All plans are subject to our full{' '}
+            <a href="/terms" className="text-brand-600 hover:text-brand-700 underline">
+              Terms of Service
+            </a>
+            .
+          </p>
         </div>
 
         <div className="text-center mt-12">

@@ -64,8 +64,10 @@ export default function Footer() {
         </div>
         </div>
 
-        <div className="border-t border-gray-200 mt-8 pt-8 text-center text-sm text-gray-500">
+        <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} 12Net Solution. All rights reserved.</p>
+          <span className="hidden sm:inline">·</span>
+          <a href="/terms" className="hover:text-brand-600 transition-colors">Terms of Service</a>
         </div>
       </div>
     </footer>

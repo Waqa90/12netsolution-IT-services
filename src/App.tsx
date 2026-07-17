@@ -12,6 +12,7 @@ import QuoteForm from './components/QuoteForm';
 import ContactSection from './components/ContactSection';
 import ContactButtons from './components/ContactButtons';
 import AboutPage from './pages/AboutPage';
+import TermsPage from './pages/TermsPage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import DashboardPage from './pages/admin/DashboardPage';
@@ -102,6 +103,10 @@ function Router() {
 
   if (currentPath === '/about') {
     return <AboutPage />;
+  }
+
+  if (currentPath === '/terms') {
+    return <TermsPage />;
   }
 
   if (currentPath === '/admin/login') {
