@@ -10,6 +10,7 @@ import TestimonialsSection from './components/TestimonialsSection';
 import BookingForm from './components/BookingForm';
 import QuoteForm from './components/QuoteForm';
 import ContactSection from './components/ContactSection';
+import LocationSection from './components/LocationSection';
 import ContactButtons from './components/ContactButtons';
 
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -55,6 +56,7 @@ function HomePage() {
         <BookingForm />
         <QuoteForm />
         <ContactSection />
+        <LocationSection />
       </main>
       <Footer />
       <ContactButtons />
