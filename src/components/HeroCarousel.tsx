@@ -19,7 +19,7 @@ const slides = [
     theme: 'Sales',
     title: 'Computers & Laptops Ready for Work',
     description: 'Affordable desktops and laptops for office, school and gaming.',
-    image: 'https://images.pexels.com/photos/18105/pexels-photo.jpg',
+    image: 'https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1000',
     cta: 'Request a Quote',
     ctaLink: '#quote'
   },
@@ -29,7 +29,7 @@ const slides = [
     theme: 'Office Setup Packages',
     title: 'Complete Office Setup Packages',
     description: 'Printers, monitors, keyboards and accessories installed and configured.',
-    image: 'https://images.pexels.com/photos/4065183/pexels-photo-4065183.jpeg',
+    image: 'https://images.pexels.com/photos/4065183/pexels-photo-4065183.jpeg?auto=compress&cs=tinysrgb&w=1000',
     cta: 'Request a Quote',
     ctaLink: '#quote'
   },
@@ -39,7 +39,7 @@ const slides = [
     theme: 'Connectivity & Infrastructure',
     title: 'Fast & Secure Network Installation',
     description: 'Routers, switches, WiFi coverage and structured cabling solutions.',
-    image: 'https://images.pexels.com/photos/4219861/pexels-photo-4219861.jpeg',
+    image: 'https://images.pexels.com/photos/4219861/pexels-photo-4219861.jpeg?auto=compress&cs=tinysrgb&w=1000',
     cta: 'Request a Quote',
     ctaLink: '#quote'
   },
@@ -49,7 +49,7 @@ const slides = [
     theme: 'Door-to-Door Repair Service',
     title: 'We Pick Up, We Fix, We Drop It Back',
     description: '$25 diagnosis fee includes free pickup from your home. Just $10 to drop your device back once it\'s fixed.',
-    image: 'https://images.pexels.com/photos/6869065/pexels-photo-6869065.jpeg',
+    image: 'https://images.pexels.com/photos/6869065/pexels-photo-6869065.jpeg?auto=compress&cs=tinysrgb&w=1000',
     cta: 'Book a Pickup',
     ctaLink: '#book'
   }
