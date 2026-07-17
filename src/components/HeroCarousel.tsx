@@ -87,7 +87,7 @@ export default function HeroCarousel() {
   const slide = slides[currentSlide];
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-brand-900 via-brand-800 to-brand-900 text-white overflow-hidden">
+    <section id="home" className="relative bg-gradient-to-br from-brand-800 via-brand-700 to-brand-900 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
 
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
@@ -103,7 +103,7 @@ export default function HeroCarousel() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
                 href="#book"
-                className="bg-brand-600 hover:bg-brand-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all transform hover:scale-105"
+                className="bg-accent-500 hover:bg-accent-600 text-brand-900 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all transform hover:scale-105"
               >
                 Book a Service
                 <ArrowRight size={20} />
@@ -119,7 +119,7 @@ export default function HeroCarousel() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
               {slide.features?.map((feature, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                  <CheckCircle className="text-green-400 mb-3 mx-auto" size={32} />
+                  <CheckCircle className="text-accent-400 mb-3 mx-auto" size={32} />
                   <h3 className="font-semibold mb-2">{feature.title}</h3>
                   <p className="text-sm text-gray-300">{feature.description}</p>
                 </div>
@@ -130,7 +130,7 @@ export default function HeroCarousel() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <div className="text-sm font-semibold text-brand-400 mb-3 uppercase tracking-wide">
+                <div className="text-sm font-semibold text-accent-400 mb-3 uppercase tracking-wide">
                   {slide.theme}
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -141,7 +141,7 @@ export default function HeroCarousel() {
                 </p>
                 <a
                   href={slide.ctaLink}
-                  className="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
+                  className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-brand-900 px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
                 >
                   {slide.cta}
                   <ArrowRight size={20} />

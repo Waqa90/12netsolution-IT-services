@@ -10,7 +10,7 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ name, role, rating, comment, service }: TestimonialCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 border-t-4 border-t-accent-400 border-x border-b border-gray-100">
       <div className="flex gap-1 mb-4">
         {[...Array(5)].map((_, i) => (
           <Star

@@ -25,7 +25,7 @@ export default function QuoteForm() {
     'Remote Support',
     'Website Design',
     'App Development & Automation',
-    'Door Access Control',
+    'Cloud Solution and Backup',
     'Phone & Tablet Repair and Unlock',
     'Door-to-Door Repair Pickup',
     'Custom IT Project',
@@ -92,7 +92,7 @@ export default function QuoteForm() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-gray-50 rounded-2xl shadow-xl p-8">
+          <form onSubmit={handleSubmit} className="bg-brand-50 rounded-2xl shadow-xl p-8 border-t-4 border-t-accent-400">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -224,7 +224,7 @@ export default function QuoteForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-accent-500 hover:bg-accent-600 text-brand-900 font-semibold py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Submitting...' : 'Request Quote'}
             </button>

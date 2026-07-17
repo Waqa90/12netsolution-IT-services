@@ -48,10 +48,10 @@ export default function WhyChooseUs() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-6 rounded-xl hover:bg-gray-50 transition-colors"
+              className="flex flex-col items-center text-center p-6 rounded-xl hover:bg-brand-50 transition-colors"
             >
-              <div className="bg-brand-100 p-4 rounded-full mb-4">
-                <reason.icon className="text-brand-600" size={32} />
+              <div className="bg-accent-100 p-4 rounded-full mb-4">
+                <reason.icon className="text-accent-600" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">{reason.title}</h3>
               <p className="text-gray-600">{reason.description}</p>

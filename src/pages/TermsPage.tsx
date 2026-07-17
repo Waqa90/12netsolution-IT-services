@@ -7,7 +7,7 @@ export default function TermsPage() {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <section className="relative bg-gradient-to-br from-brand-900 via-brand-800 to-brand-900 text-white overflow-hidden py-20 md:py-28">
+        <section className="relative bg-gradient-to-br from-brand-800 via-brand-700 to-brand-900 text-white overflow-hidden py-20 md:py-28">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Terms of Service</h1>
@@ -44,7 +44,7 @@ export default function TermsPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-brand-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto space-y-10 text-gray-700">
               <div>
@@ -97,7 +97,7 @@ export default function TermsPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-brand-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto space-y-10 text-gray-700">
               <div>

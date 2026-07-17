@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, DoorOpen, Truck, Smartphone, Code } from 'lucide-react';
+import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, UploadCloud, Truck, Smartphone, Code } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 export default function ServicesSection() {
@@ -357,38 +357,38 @@ export default function ServicesSection() {
       ],
     },
     {
-      icon: DoorOpen,
-      title: 'Door Access Control',
-      description: 'Modern keyless entry systems',
+      icon: UploadCloud,
+      title: 'Cloud Solution and Backup',
+      description: 'Secure cloud storage, backup, and business continuity',
       features: [
-        'Keycard and fob systems',
-        'Biometric access control',
-        'Remote access management',
-        'Entry logging and reporting',
+        'Automated cloud backup for your data',
+        'Secure cloud storage setup',
+        'File sync across devices',
+        'Disaster recovery planning',
       ],
       detailedFeatures: [
-        'Electronic lock installation',
-        'Keycard, fob, or biometric readers',
-        'Access control software setup',
-        'User permission management',
-        'Time-based access scheduling',
-        'Entry and exit logging system',
+        'Cloud storage setup (Google Workspace, Microsoft 365, etc.)',
+        'Automated daily/weekly backup scheduling',
+        'Local + cloud hybrid backup options',
+        'Data migration to the cloud',
+        'Disaster recovery and restore testing',
+        'Ongoing monitoring of backup health',
       ],
       benefits: [
-        'Enhanced security and access control',
-        'No need for physical keys',
-        'Track who enters and exits',
-        'Easily add or remove access',
-        'Perfect for businesses and apartments',
-        'Integration with security systems',
+        'Protect your business from data loss',
+        'Access your files from anywhere',
+        'Fast recovery after hardware failure or theft',
+        'Peace of mind with automated backups',
+        'Scalable storage as your business grows',
+        'Reduced risk of data loss from ransomware',
       ],
       process: [
-        'Access control needs assessment',
-        'System design and equipment selection',
-        'Electronic lock installation',
-        'Reader and control panel setup',
-        'Software configuration and testing',
-        'User training and documentation',
+        'Assessment of your current data and storage needs',
+        'Cloud platform and backup solution selection',
+        'Setup and data migration',
+        'Backup schedule configuration',
+        'Recovery testing to confirm everything works',
+        'Ongoing monitoring and support',
       ],
     },
     {
@@ -430,7 +430,7 @@ export default function ServicesSection() {
 
   return (
     <>
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-brand-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
@@ -483,8 +483,8 @@ export default function ServicesSection() {
                   <h3 className="text-2xl font-bold mb-6 text-gray-900">Why Choose This Service?</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {services[selectedService].benefits.map((benefit, index) => (
-                      <div key={index} className="flex items-start gap-3 bg-gray-50 p-4 rounded-lg">
-                        <span className="text-green-500 flex-shrink-0 mt-1">✓</span>
+                      <div key={index} className="flex items-start gap-3 bg-brand-50 p-4 rounded-lg">
+                        <span className="text-accent-600 flex-shrink-0 mt-1">✓</span>
                         <p className="text-gray-700">{benefit}</p>
                       </div>
                     ))}
@@ -530,14 +530,14 @@ export default function ServicesSection() {
                   <a
                     href="#book"
                     onClick={() => setSelectedService(null)}
-                    className="flex-1 bg-brand-600 hover:bg-brand-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors text-center"
+                    className="flex-1 bg-accent-500 hover:bg-accent-600 text-brand-900 px-6 py-3 rounded-lg font-semibold transition-colors text-center"
                   >
                     Book This Service
                   </a>
                   <a
                     href="#quote"
                     onClick={() => setSelectedService(null)}
-                    className="flex-1 bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors text-center"
+                    className="flex-1 border-2 border-brand-600 text-brand-600 hover:bg-brand-50 px-6 py-3 rounded-lg font-semibold transition-colors text-center"
                   >
                     Get a Quote
                   </a>

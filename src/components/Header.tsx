@@ -35,7 +35,7 @@ export default function Header() {
             ))}
             <a
               href="/#book"
-              className="bg-brand-600 hover:bg-brand-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+              className="bg-accent-500 hover:bg-accent-600 text-brand-900 px-6 py-2 rounded-lg font-semibold transition-colors"
             >
               Book Now
             </a>
@@ -63,7 +63,7 @@ export default function Header() {
             ))}
             <a
               href="/#book"
-              className="block bg-brand-600 hover:bg-brand-700 text-white px-6 py-2 rounded-lg font-semibold text-center transition-colors"
+              className="block bg-accent-500 hover:bg-accent-600 text-brand-900 px-6 py-2 rounded-lg font-semibold text-center transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Book Now
@@ -72,7 +72,7 @@ export default function Header() {
         )}
       </div>
 
-      <div className="bg-gray-50 border-t border-gray-200 py-2">
+      <div className="bg-brand-50 border-t border-gray-200 py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-4 text-sm">
           <div className="flex items-center gap-2 text-gray-700">
             <Phone size={14} />

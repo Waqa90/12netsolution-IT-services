@@ -81,7 +81,7 @@ export default function PricingSection() {
   };
 
   return (
-    <section id="pricing" className="py-20 bg-gray-50">
+    <section id="pricing" className="py-20 bg-brand-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Pricing Plans</h2>
@@ -101,7 +101,7 @@ export default function PricingSection() {
           ))}
         </div>
 
-        <div className="max-w-4xl mx-auto mt-12 bg-white border border-gray-200 rounded-xl p-6">
+        <div className="max-w-4xl mx-auto mt-12 bg-white border-l-4 border-l-accent-400 border-y border-r border-gray-200 rounded-xl p-6">
           <h3 className="font-semibold text-gray-900 mb-3">Good to Know</h3>
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
@@ -134,7 +134,7 @@ export default function PricingSection() {
           <p className="text-gray-600 mb-4">Need a custom solution?</p>
           <a
             href="/#quote"
-            className="inline-block bg-brand-600 hover:bg-brand-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="inline-block bg-accent-500 hover:bg-accent-600 text-brand-900 px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Request Custom Quote
           </a>
