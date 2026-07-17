@@ -6,22 +6,16 @@ interface ServiceCardProps {
   title: string;
   description: string;
   features: string[];
-  priceRange?: string;
   onLearnMore: () => void;
 }
 
-export default function ServiceCard({ icon: Icon, title, description, features, priceRange, onLearnMore }: ServiceCardProps) {
+export default function ServiceCard({ icon: Icon, title, description, features, onLearnMore }: ServiceCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100">
       <div className="bg-gradient-to-br from-brand-600 to-brand-700 p-6 text-white">
         <Icon size={40} className="mb-4" />
         <h3 className="text-2xl font-bold mb-2">{title}</h3>
         <p className="text-brand-100">{description}</p>
-        {priceRange && (
-          <p className="text-white font-semibold mt-3 bg-white/15 inline-block px-3 py-1 rounded-full text-sm">
-            {priceRange}
-          </p>
-        )}
       </div>
 
       <div className="p-6">
