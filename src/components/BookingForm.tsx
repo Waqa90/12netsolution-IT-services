@@ -24,7 +24,7 @@ export default function BookingForm() {
     'Business IT Support',
     'Network Cabling',
     'Remote Support',
-    'Alarm System Installation',
+    'Website Design',
     'Door Access Control',
     'Other',
   ];

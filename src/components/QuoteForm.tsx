@@ -23,7 +23,7 @@ export default function QuoteForm() {
     'Business IT Support',
     'Network Cabling',
     'Remote Support',
-    'Alarm System Installation',
+    'Website Design',
     'Door Access Control',
     'Custom IT Project',
   ];

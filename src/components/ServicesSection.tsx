@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Bell, DoorOpen } from 'lucide-react';
+import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, DoorOpen } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 export default function ServicesSection() {
@@ -252,38 +252,38 @@ export default function ServicesSection() {
       ],
     },
     {
-      icon: Bell,
-      title: 'Alarm System Installation',
-      description: 'Comprehensive security alarm solutions',
+      icon: Globe,
+      title: 'Website Design',
+      description: 'Professional websites that grow your business',
       features: [
-        'Motion sensor installation',
-        'Door and window sensors',
-        'Professional monitoring setup',
-        'Mobile alerts and notifications',
+        'Custom responsive website design',
+        'Mobile-friendly layouts',
+        'SEO-friendly structure',
+        'Ongoing support and updates',
       ],
       detailedFeatures: [
-        'Advanced motion detection sensors',
-        'Perimeter protection with door/window sensors',
-        'Glass break detectors',
-        'Control panel installation and programming',
-        'Mobile app configuration',
-        'Integration with existing security systems',
+        'Custom design tailored to your brand',
+        'Responsive layout for all devices',
+        'Fast-loading, modern build',
+        'Contact forms and booking integration',
+        'Basic SEO setup for search visibility',
+        'Domain and hosting setup assistance',
       ],
       benefits: [
-        'Enhanced property security',
-        'Immediate alerts to intrusions',
-        'Lower insurance premiums',
-        'Peace of mind when away',
-        'Professional monitoring options',
-        'Deterrent to burglars',
+        'Professional online presence',
+        'Attract more customers online',
+        'Mobile-friendly for all visitors',
+        'Easy for customers to contact you',
+        'Improved credibility and trust',
+        'Ongoing support after launch',
       ],
       process: [
-        'Security assessment and consultation',
-        'Custom system design for your property',
-        'Professional sensor installation',
-        'Control panel setup and configuration',
-        'Mobile app setup and testing',
-        'Training on system operation',
+        'Initial consultation on goals and design preferences',
+        'Site structure and content planning',
+        'Custom design and development',
+        'Review and revisions',
+        'Testing across devices and browsers',
+        'Launch and post-launch support',
       ],
     },
     {
