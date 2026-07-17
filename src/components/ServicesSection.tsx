@@ -10,6 +10,7 @@ export default function ServicesSection() {
       icon: Satellite,
       title: 'Starlink Installation',
       description: 'High-speed satellite internet for remote areas',
+      priceRange: 'FJD 150 - 400',
       features: [
         'Professional dish installation and alignment',
         'Optimal placement for best signal',
@@ -45,6 +46,7 @@ export default function ServicesSection() {
       icon: Wifi,
       title: 'WiFi Network Setup',
       description: 'Fast and reliable wireless coverage',
+      priceRange: 'FJD 150 - 600',
       features: [
         'Whole-home or office WiFi coverage',
         'Network security configuration',
@@ -80,6 +82,7 @@ export default function ServicesSection() {
       icon: Camera,
       title: 'CCTV Security Systems',
       description: 'Advanced surveillance for your property',
+      priceRange: 'FJD 400 - 2,000',
       features: [
         'HD camera installation',
         'Remote viewing setup',
@@ -115,6 +118,7 @@ export default function ServicesSection() {
       icon: Monitor,
       title: 'Computer Repair',
       description: 'Quick diagnosis and repair services',
+      priceRange: 'FJD 50 - 300',
       features: [
         'Hardware repairs and upgrades',
         'Software troubleshooting',
@@ -185,6 +189,7 @@ export default function ServicesSection() {
       icon: Cable,
       title: 'Network Cabling',
       description: 'Professional structured cabling',
+      priceRange: 'FJD 200 - 1,500',
       features: [
         'Cat5e/Cat6 cable installation',
         'Ethernet port setup',
@@ -220,6 +225,7 @@ export default function ServicesSection() {
       icon: ScreenShare,
       title: 'Remote Support',
       description: 'Expert assistance from anywhere',
+      priceRange: 'FJD 50 - 150',
       features: [
         'Instant remote troubleshooting',
         'Software installation and updates',
@@ -291,6 +297,7 @@ export default function ServicesSection() {
       icon: DoorOpen,
       title: 'Door Access Control',
       description: 'Modern keyless entry systems',
+      priceRange: 'FJD 500 - 3,000',
       features: [
         'Keycard and fob systems',
         'Biometric access control',
