@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, DoorOpen, Truck, Smartphone } from 'lucide-react';
+import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, DoorOpen, Truck, Smartphone, Code } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 export default function ServicesSection() {
@@ -319,6 +319,41 @@ export default function ServicesSection() {
         'Review and revisions',
         'Testing across devices and browsers',
         'Launch and post-launch support',
+      ],
+    },
+    {
+      icon: Code,
+      title: 'App Development & Automation',
+      description: 'Custom apps and automation tools built around your business',
+      features: [
+        'Custom mobile and web app development',
+        'Business process automation',
+        'Third-party integrations and APIs',
+        'Ongoing maintenance and support',
+      ],
+      detailedFeatures: [
+        'Requirements gathering and project planning',
+        'Custom mobile app development (iOS/Android)',
+        'Custom web apps and internal business tools',
+        'Workflow and business process automation',
+        'Integration with existing systems and APIs',
+        'Testing, deployment and ongoing support',
+      ],
+      benefits: [
+        'Save time with automated workflows',
+        'Built exactly around your business needs',
+        'Scales as your business grows',
+        'Fewer manual errors',
+        'Competitive edge with custom tools',
+        'Ongoing support after launch',
+      ],
+      process: [
+        'Initial consultation on goals and requirements',
+        'Planning and scoping the project',
+        'Design and development',
+        'Testing and revisions',
+        'Launch and deployment',
+        'Ongoing support and updates',
       ],
     },
     {
