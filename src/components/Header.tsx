@@ -17,8 +17,8 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <div className="h-12 w-auto flex items-center justify-center">
-              <img src="/logo.png" alt="12Net Solution - IT Services in Nadi" className="h-12 w-auto" />
+            <div className="h-16 w-auto flex items-center justify-center">
+              <img src="/logo.png" alt="12Net Solution - IT Services in Nadi" className="h-16 w-auto" />
             </div>
           </div>
 
