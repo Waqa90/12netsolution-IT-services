@@ -35,7 +35,7 @@ export default function PricingSection() {
         'Or pay FJD 180/year (save FJD 60)',
         'Ideal for low-maintenance businesses',
       ],
-      highlighted: false,
+      highlighted: true,
     },
     {
       name: 'Small Business Support',
@@ -52,7 +52,7 @@ export default function PricingSection() {
         '20% discount on additional services',
         'Free emergency call-outs',
       ],
-      highlighted: true,
+      highlighted: false,
     },
     {
       name: 'Emergency Call-Out',
