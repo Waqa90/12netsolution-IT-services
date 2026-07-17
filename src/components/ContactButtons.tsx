@@ -17,7 +17,7 @@ export default function ContactButtons() {
       </a>
 
       <a
-        href="#payment"
+        href="/#payment"
         className="bg-brand-600 hover:bg-brand-700 text-white p-4 rounded-full shadow-lg transition-all transform hover:scale-110 flex items-center justify-center"
         title="Make Payment"
       >

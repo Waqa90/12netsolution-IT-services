@@ -5,11 +5,12 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/#home' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -33,7 +34,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#book"
+              href="/#book"
               className="bg-brand-600 hover:bg-brand-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
             >
               Book Now
@@ -61,7 +62,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#book"
+              href="/#book"
               className="block bg-brand-600 hover:bg-brand-700 text-white px-6 py-2 rounded-lg font-semibold text-center transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >

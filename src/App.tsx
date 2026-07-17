@@ -11,6 +11,7 @@ import BookingForm from './components/BookingForm';
 import QuoteForm from './components/QuoteForm';
 import ContactSection from './components/ContactSection';
 import ContactButtons from './components/ContactButtons';
+import AboutPage from './pages/AboutPage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import DashboardPage from './pages/admin/DashboardPage';
@@ -84,6 +85,10 @@ function Router() {
       window.history.pushState = originalPushState;
     };
   }, []);
+
+  if (currentPath === '/about') {
+    return <AboutPage />;
+  }
 
   if (currentPath === '/admin/login') {
     return <LoginPage />;

@@ -19,23 +19,24 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#home" className="text-gray-600 hover:text-brand-600 transition-colors">Home</a></li>
-              <li><a href="#services" className="text-gray-600 hover:text-brand-600 transition-colors">Services</a></li>
-              <li><a href="#pricing" className="text-gray-600 hover:text-brand-600 transition-colors">Pricing</a></li>
-              <li><a href="#testimonials" className="text-gray-600 hover:text-brand-600 transition-colors">Testimonials</a></li>
-              <li><a href="#contact" className="text-gray-600 hover:text-brand-600 transition-colors">Contact</a></li>
+              <li><a href="/#home" className="text-gray-600 hover:text-brand-600 transition-colors">Home</a></li>
+              <li><a href="/about" className="text-gray-600 hover:text-brand-600 transition-colors">About Us</a></li>
+              <li><a href="/#services" className="text-gray-600 hover:text-brand-600 transition-colors">Services</a></li>
+              <li><a href="/#pricing" className="text-gray-600 hover:text-brand-600 transition-colors">Pricing</a></li>
+              <li><a href="/#testimonials" className="text-gray-600 hover:text-brand-600 transition-colors">Testimonials</a></li>
+              <li><a href="/#contact" className="text-gray-600 hover:text-brand-600 transition-colors">Contact</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#starlink" className="text-gray-600 hover:text-brand-600 transition-colors">Starlink Installation</a></li>
-              <li><a href="#wifi" className="text-gray-600 hover:text-brand-600 transition-colors">WiFi Setup</a></li>
-              <li><a href="#cctv" className="text-gray-600 hover:text-brand-600 transition-colors">CCTV Systems</a></li>
-              <li><a href="#repair" className="text-gray-600 hover:text-brand-600 transition-colors">Computer Repair</a></li>
-              <li><a href="#support" className="text-gray-600 hover:text-brand-600 transition-colors">IT Support</a></li>
-              <li><a href="#cabling" className="text-gray-600 hover:text-brand-600 transition-colors">Network Cabling</a></li>
+              <li><a href="/#starlink" className="text-gray-600 hover:text-brand-600 transition-colors">Starlink Installation</a></li>
+              <li><a href="/#wifi" className="text-gray-600 hover:text-brand-600 transition-colors">WiFi Setup</a></li>
+              <li><a href="/#cctv" className="text-gray-600 hover:text-brand-600 transition-colors">CCTV Systems</a></li>
+              <li><a href="/#repair" className="text-gray-600 hover:text-brand-600 transition-colors">Computer Repair</a></li>
+              <li><a href="/#support" className="text-gray-600 hover:text-brand-600 transition-colors">IT Support</a></li>
+              <li><a href="/#cabling" className="text-gray-600 hover:text-brand-600 transition-colors">Network Cabling</a></li>
             </ul>
           </div>
 
