@@ -30,6 +30,8 @@ export default function PricingSection() {
         'No minimum number of visits required',
         'Fast response time guarantee',
         'Discounted rates on call-outs when needed',
+        '1 free service visit every 6 months, scheduled at your convenience',
+        '2x free 30-minute remote assistance sessions monthly',
         'Or pay FJD 180/year (save FJD 60)',
         'Ideal for low-maintenance businesses',
       ],
