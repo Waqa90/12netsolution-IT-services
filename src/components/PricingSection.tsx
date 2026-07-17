@@ -9,13 +9,14 @@ export default function PricingSection() {
       name: 'Home IT Support',
       price: 'FJD 150',
       period: 'month',
-      description: 'Perfect for home users who need reliable IT support',
+      description: 'Reliable, remote-first IT support for home users',
       features: [
-        '2 service visits per month',
+        '1 on-site visit + up to 2 remote sessions per month',
         'Remote support via phone/email',
         'Computer maintenance and updates',
         'Virus protection and removal',
         'Network troubleshooting',
+        'Extra on-site visits at discounted subscriber rate',
         '10% discount on additional services',
       ],
       highlighted: false,
@@ -28,12 +29,12 @@ export default function PricingSection() {
       features: [
         'Priority placement on our support queue',
         'No minimum number of visits required',
+        'Covers up to 3 devices/users',
         'Fast response time guarantee',
         'Discounted rates on call-outs when needed',
-        '1 free service visit every 6 months, scheduled at your convenience',
+        '1 discounted on-site visit per year (50% off call-out rate)',
         '2x free 30-minute remote assistance sessions monthly',
         'Or pay FJD 180/year (save FJD 60)',
-        'Ideal for low-maintenance businesses',
       ],
       highlighted: true,
     },
@@ -43,14 +44,14 @@ export default function PricingSection() {
       period: 'month',
       description: 'Comprehensive IT support for growing businesses',
       features: [
-        'Unlimited remote support',
+        'Up to 15 hours of remote support per month',
         '4 on-site visits per month',
         'Priority response time',
         'Network monitoring',
         'Server maintenance',
         'Employee IT training',
         '20% discount on additional services',
-        'Free emergency call-outs',
+        'Free emergency call-outs (Mon-Fri, 8AM-5PM)',
       ],
       highlighted: false,
     },
@@ -58,14 +59,14 @@ export default function PricingSection() {
       name: 'Emergency Call-Out',
       price: 'FJD 120',
       period: 'visit',
-      description: 'Same-day urgent support when you need it most',
+      description: 'Fast, on-site support when you need it most',
       features: [
         'Same-day service',
         'Urgent problem resolution',
         'On-site diagnosis',
-        'Available 7 days a week',
+        'FJD 120/visit: Mon-Fri, 8AM-5PM',
+        'FJD 180/visit: after-hours, weekends & public holidays',
         'No monthly commitment',
-        'Pay per visit',
       ],
       highlighted: false,
     },
@@ -100,10 +101,32 @@ export default function PricingSection() {
           ))}
         </div>
 
+        <div className="max-w-4xl mx-auto mt-12 bg-white border border-gray-200 rounded-xl p-6">
+          <h3 className="font-semibold text-gray-900 mb-3">Good to Know</h3>
+          <ul className="space-y-2 text-sm text-gray-600">
+            <li>
+              <span className="font-medium text-gray-800">Business Hours:</span> Monday-Friday, 8:00 AM - 5:00 PM.
+              Call-outs outside these hours (evenings, weekends, public holidays) are billed at the after-hours rate.
+            </li>
+            <li>
+              <span className="font-medium text-gray-800">Remote support hours</span> on Small Business Support are
+              fair-use capped at 15 hours/month. Additional hours are billed at your plan's discounted rate.
+            </li>
+            <li>
+              <span className="font-medium text-gray-800">Business Care Plan</span> covers up to 3 devices/users.
+              More devices? You'll need an additional plan or an upgrade to Small Business Support.
+            </li>
+            <li>
+              <span className="font-medium text-gray-800">On-site visits</span> beyond what's included in your plan
+              are billed at your plan's discounted subscriber/call-out rate, not the standard walk-in rate.
+            </li>
+          </ul>
+        </div>
+
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">Need a custom solution?</p>
           <a
-            href="#quote"
+            href="/#quote"
             className="inline-block bg-brand-600 hover:bg-brand-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Request Custom Quote
