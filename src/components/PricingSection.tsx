@@ -21,6 +21,21 @@ export default function PricingSection() {
       highlighted: false,
     },
     {
+      name: 'Business Care Plan',
+      price: 'FJD 20',
+      period: 'month',
+      description: "For businesses that don't need IT help often, but want priority service the moment you call",
+      features: [
+        'Priority placement on our support queue',
+        'No minimum number of visits required',
+        'Fast response time guarantee',
+        'Discounted rates on call-outs when needed',
+        'Or pay FJD 180/year (save FJD 60)',
+        'Ideal for low-maintenance businesses',
+      ],
+      highlighted: false,
+    },
+    {
       name: 'Small Business Support',
       price: 'FJD 450',
       period: 'month',
@@ -72,7 +87,7 @@ export default function PricingSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
             <PricingCard
               key={index}
