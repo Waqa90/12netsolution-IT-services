@@ -26,6 +26,7 @@ export default function BookingForm() {
     'Remote Support',
     'Website Design',
     'Door Access Control',
+    'Phone & Tablet Repair and Unlock',
     'Door-to-Door Repair Pickup',
     'Other',
   ];

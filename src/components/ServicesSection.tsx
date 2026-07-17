@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, DoorOpen, Truck } from 'lucide-react';
+import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, DoorOpen, Truck, Smartphone } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 export default function ServicesSection() {
@@ -144,6 +144,41 @@ export default function ServicesSection() {
         'Testing and quality assurance',
         'Data restoration if needed',
         'System optimization and handover',
+      ],
+    },
+    {
+      icon: Smartphone,
+      title: 'Phone & Tablet Repair and Unlock',
+      description: 'Screen, battery and unlock services for phones and tablets',
+      features: [
+        'Screen and battery replacement',
+        'Network/carrier SIM unlock',
+        'iPhone, iPad and tablet unlock',
+        'Door-to-door pickup available',
+      ],
+      detailedFeatures: [
+        'Phone, tablet, iPhone and iPad screen replacement',
+        'Battery and charging port repair',
+        'Water and liquid damage diagnostics',
+        'Network/carrier SIM unlock for all major carriers',
+        'iCloud and passcode unlock (proof of ownership required)',
+        'Data backup before any repair or unlock',
+      ],
+      benefits: [
+        'Use your device on any network',
+        'Fast turnaround times',
+        'Experienced technicians',
+        'Quality replacement parts',
+        'Free door-to-door pickup available',
+        'Affordable, upfront pricing',
+      ],
+      process: [
+        'Book in-store or request a door-to-door pickup',
+        'Diagnosis and repair or unlock assessment',
+        'Ownership verification for unlock requests',
+        'Repair or unlock carried out',
+        'Testing and quality check',
+        'Collect in-store or door-to-door drop-off',
       ],
     },
     {
