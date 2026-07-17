@@ -19,6 +19,20 @@ import BookingsPage from './pages/admin/BookingsPage';
 import QuotesPage from './pages/admin/QuotesPage';
 
 function HomePage() {
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.slice(1);
+      const scrollToTarget = () => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+      const timeout = setTimeout(scrollToTarget, 100);
+      return () => clearTimeout(timeout);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
