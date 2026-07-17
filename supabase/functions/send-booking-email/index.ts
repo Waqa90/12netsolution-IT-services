@@ -117,8 +117,8 @@ Deno.serve(async (req: Request) => {
             Authorization: `Bearer ${resendApiKey}`,
           },
           body: JSON.stringify({
-            from: "NetSolution IT Services <bookings@netsolution.com>",
-            to: ["waqa@12netsolution.com"],
+            from: "12Net Solution <onboarding@resend.dev>",
+            to: ["atunaisawaqa@gmail.com"],
             subject: `New Service Booking: ${bookingData.service_type}`,
             html: emailHtml,
           }),
