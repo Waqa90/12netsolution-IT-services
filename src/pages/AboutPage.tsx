@@ -1,4 +1,4 @@
-import { ArrowRight, BadgeCheck, HeartHandshake, Eye, ShieldCheck, Users, Scale } from 'lucide-react';
+import { ArrowRight, BadgeCheck, HeartHandshake, Eye, ShieldCheck, Users, Scale, MessageCircle } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactButtons from '../components/ContactButtons';
@@ -147,10 +147,13 @@ export default function AboutPage() {
                   <ArrowRight size={20} />
                 </a>
                 <a
-                  href="tel:+6798463328"
+                  href={`https://wa.me/6798463328?text=${encodeURIComponent('Hi, I would like to inquire about your IT services.')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-brand-800 hover:bg-brand-900 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all transform hover:scale-105"
                 >
-                  Call +679 846 3328
+                  <MessageCircle size={20} />
+                  Chat on WhatsApp
                 </a>
               </div>
             </div>
