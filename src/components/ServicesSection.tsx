@@ -255,6 +255,7 @@ export default function ServicesSection() {
       icon: Globe,
       title: 'Website Design',
       description: 'Professional websites that grow your business',
+      priceRange: 'FJD 600 - 2,500',
       features: [
         'Custom responsive website design',
         'Mobile-friendly layouts',
@@ -367,6 +368,11 @@ export default function ServicesSection() {
                         <Icon size={64} className="mx-auto mb-6" />
                         <h2 className="text-4xl font-bold mb-4">{Service.title}</h2>
                         <p className="text-xl text-brand-100">{Service.description}</p>
+                        {Service.priceRange && (
+                          <p className="inline-block mt-4 bg-white/15 px-4 py-2 rounded-full font-semibold">
+                            {Service.priceRange}
+                          </p>
+                        )}
                       </>
                     );
                   })()}
