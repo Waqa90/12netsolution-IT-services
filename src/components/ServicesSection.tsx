@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, DoorOpen } from 'lucide-react';
+import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, DoorOpen, Truck } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 export default function ServicesSection() {
@@ -319,6 +319,41 @@ export default function ServicesSection() {
         'Reader and control panel setup',
         'Software configuration and testing',
         'User training and documentation',
+      ],
+    },
+    {
+      icon: Truck,
+      title: 'Door-to-Door Repair Pickup',
+      description: 'We collect your device, fix it, and bring it back',
+      features: [
+        '$25 diagnosis fee, includes free pickup',
+        '$10 to drop your device back home',
+        'No need to leave your house',
+        'Available across Nadi',
+      ],
+      detailedFeatures: [
+        'Schedule a pickup time that works for you',
+        'Free doorstep pickup included with diagnosis',
+        'Full diagnostic assessment of your device',
+        'Repair completed at our workshop',
+        'Door-to-door drop-off for just $10',
+        'Updates on repair progress along the way',
+      ],
+      benefits: [
+        'Save time, no need to travel',
+        'Convenient for busy homes and offices',
+        'Transparent, upfront pricing',
+        'Same trusted technicians, at your door',
+        'Ideal if you don\'t have transport',
+        'Peace of mind from pickup to drop-off',
+      ],
+      process: [
+        'Book a pickup time online or by phone',
+        'We collect your device from your home',
+        'Diagnosis and repair at our workshop',
+        'You approve the repair and cost',
+        'Device tested before drop-off',
+        'We drop it back to your home for $10',
       ],
     },
   ];

@@ -25,6 +25,7 @@ export default function QuoteForm() {
     'Remote Support',
     'Website Design',
     'Door Access Control',
+    'Door-to-Door Repair Pickup',
     'Custom IT Project',
   ];
 

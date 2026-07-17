@@ -46,12 +46,12 @@ const slides = [
   {
     id: 5,
     type: 'product',
-    theme: 'Headsets & Business Communication',
-    title: 'Crystal Clear Business Communication',
-    description: 'Professional headsets and VoIP equipment for calls and meetings.',
-    image: 'https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg',
-    cta: 'Request a Quote',
-    ctaLink: '#quote'
+    theme: 'Door-to-Door Repair Service',
+    title: 'We Pick Up, We Fix, We Drop It Back',
+    description: '$25 diagnosis fee includes free pickup from your home. Just $10 to drop your device back once it\'s fixed.',
+    image: 'https://images.pexels.com/photos/6869065/pexels-photo-6869065.jpeg',
+    cta: 'Book a Pickup',
+    ctaLink: '#book'
   }
 ];
 
