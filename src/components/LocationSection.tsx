@@ -2,7 +2,8 @@ import { MapPin, Navigation } from 'lucide-react';
 
 export default function LocationSection() {
   const address = '6FGF+HXC, Votualevu, Fiji';
-  const mapsQuery = encodeURIComponent(address);
+  const coordinates = '-17.773599,177.476296';
+  const mapsQuery = encodeURIComponent(coordinates);
 
   return (
     <section className="py-20 bg-brand-50">
