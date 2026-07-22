@@ -24,7 +24,7 @@ export default function QuoteForm() {
     'Network Cabling',
     'Remote Support',
     'Website Design',
-    'App Development & Automation',
+    'AI and Automation',
     'Cloud Solution and Backup',
     'Phone & Tablet Repair and Unlock',
     'Door-to-Door Repair Pickup',

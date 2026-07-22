@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, UploadCloud, Truck, Smartphone, Code } from 'lucide-react';
+import { Satellite, Wifi, Camera, Monitor, Headset, Cable, X, ScreenShare, Globe, UploadCloud, Truck, Smartphone, Bot } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 export default function ServicesSection() {
@@ -322,35 +322,35 @@ export default function ServicesSection() {
       ],
     },
     {
-      icon: Code,
-      title: 'App Development & Automation',
-      description: 'Custom apps and automation tools built around your business',
+      icon: Bot,
+      title: 'AI and Automation',
+      description: 'AI-powered tools and automation that save your business time',
       features: [
-        'Custom mobile and web app development',
+        'AI chatbots and virtual assistants',
         'Business process automation',
-        'Third-party integrations and APIs',
-        'Ongoing maintenance and support',
+        'AI-powered data and document processing',
+        'Custom AI integrations for your tools',
       ],
       detailedFeatures: [
-        'Requirements gathering and project planning',
-        'Custom mobile app development (iOS/Android)',
-        'Custom web apps and internal business tools',
+        'Requirements gathering and use-case planning',
+        'AI chatbot setup for customer support or bookings',
         'Workflow and business process automation',
-        'Integration with existing systems and APIs',
+        'AI-powered document and data processing',
+        'Integration with your existing systems and APIs',
         'Testing, deployment and ongoing support',
       ],
       benefits: [
         'Save time with automated workflows',
-        'Built exactly around your business needs',
-        'Scales as your business grows',
+        'Faster response times for your customers',
         'Fewer manual errors',
-        'Competitive edge with custom tools',
+        'Scales as your business grows',
+        'Competitive edge with smart automation',
         'Ongoing support after launch',
       ],
       process: [
-        'Initial consultation on goals and requirements',
+        'Initial consultation on goals and use cases',
         'Planning and scoping the project',
-        'Design and development',
+        'AI and automation setup and configuration',
         'Testing and revisions',
         'Launch and deployment',
         'Ongoing support and updates',
