@@ -117,7 +117,7 @@ export default function AboutPage() {
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Built on Faith & Core Values</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                At the very core of 12Net Solution is a foundation built on the Word of the Kingdom of God. We believe that business should be a reflection of higher principles. Because of this, our entire service system is centered around three non-negotiable pillars:
+                At the very core of 12Net Solution is a foundation built on the Word of God. We believe that business should be a reflection of higher principles. Because of this, our entire service system is centered around three non-negotiable pillars:
               </p>
             </div>
 
