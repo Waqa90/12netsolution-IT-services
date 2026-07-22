@@ -1,4 +1,4 @@
-import { ArrowRight, BadgeCheck, HeartHandshake, Eye, ShieldCheck, Users, Scale, MessageCircle } from 'lucide-react';
+import { ArrowRight, BadgeCheck, HeartHandshake, Eye, ShieldCheck, Users, Scale, MessageCircle, Target, Compass } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactButtons from '../components/ContactButtons';
@@ -77,6 +77,32 @@ export default function AboutPage() {
 
         <section className="py-20 bg-brand-50">
           <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <div className="bg-white rounded-xl p-8 border-t-4 border-t-accent-400 shadow-md">
+                <div className="bg-accent-100 p-4 rounded-full mb-4 w-fit">
+                  <Target className="text-accent-600" size={32} />
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">Vision</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  To be the Western Division's complete technology company — one trusted local team for everything from cameras and connectivity to computers, websites and the cloud.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl p-8 border-t-4 border-t-accent-400 shadow-md">
+                <div className="bg-accent-100 p-4 rounded-full mb-4 w-fit">
+                  <Compass className="text-accent-600" size={32} />
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">Mission</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  We keep Fiji's homes and businesses connected, secure and running — delivering end-to-end IT, security and internet solutions with same-day response, guaranteed quality, and ongoing support our clients can rely on.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Founder & Story</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -86,7 +112,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-brand-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Built on Faith & Core Values</h2>
@@ -99,7 +125,7 @@ export default function AboutPage() {
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-6 rounded-xl bg-brand-50 hover:bg-brand-100 transition-colors"
+                  className="flex flex-col items-center text-center p-6 rounded-xl bg-white hover:shadow-lg transition-all"
                 >
                   <div className="bg-accent-100 p-4 rounded-full mb-4">
                     <value.icon className="text-accent-600" size={32} />
@@ -112,7 +138,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-brand-50">
+        <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Nadi Chooses 12Net Solution</h2>
@@ -122,7 +148,7 @@ export default function AboutPage() {
               {reasons.map((reason, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-6 rounded-xl bg-white hover:shadow-lg transition-all"
+                  className="flex flex-col items-center text-center p-6 rounded-xl bg-brand-50 hover:bg-brand-100 transition-colors"
                 >
                   <div className="bg-accent-100 p-4 rounded-full mb-4">
                     <reason.icon className="text-accent-600" size={32} />
